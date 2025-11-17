@@ -61,7 +61,7 @@ jobs:
     # TODO: Replace the run block to use our preferred linter
     - name: Lint with ruff
       run: |
-        uv run ruff check --fix
+        uvx ruff check --fix
 
     # TODO: Add steps to run formatting steps and type checking
     - name: Format with isort
