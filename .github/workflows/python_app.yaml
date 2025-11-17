@@ -66,12 +66,12 @@ jobs:
     # TODO: Add steps to run formatting steps and type checking
     - name: Format with isort
       run: |
-        uv run isort .
+        uvx isort .
     
     - name: Type checker with ty
       run: |
-        uv run mypy .
+        uvx ty check
     
     - name: Format with ruff
       run: |
-        uv run ruff format
+        uvx ruff format
